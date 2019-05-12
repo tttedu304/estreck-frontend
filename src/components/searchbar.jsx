@@ -9,11 +9,10 @@ class SearchBar extends Component {
     this.setState(state => ({ open: !state.open }));
   };
   render() {
-      // eslint-disable-next-line no-restricted-globals
-    const searchClass = classNames({ open, search: true });
-
+    // eslint-disable-next-line no-restricted-globals
+    const searchClass = classNames({ open: this.state.open, search: true });
     return (
-      <div className={this.searchClass}>
+      <div className={searchClass}>
         <input type="search" className="search-box" />
         <span className="search-button" onClick={this.handleClick}>
           <span className="search-icon" />

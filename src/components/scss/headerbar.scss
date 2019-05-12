@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header__nav {
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.header__nav--menu {
+  display: block;
+  margin: 1em;
+  width: 3.6rem;
+}
+
+.header__nav--menu::before,
+.header__nav--menu::after {
+  background-color: green;
+  content: "";
+  display: block;
+  height: 0.4rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.header__nav--menu::before {
+  -webkit-box-shadow: 0 1rem 0 green;
+  box-shadow: 0 1rem 0 green;
+  margin-bottom: 1.6rem;
+}
+
+.header__nav--menu:hover:before {
+  -webkit-box-shadow: 0 0 0 green;
+  box-shadow: 0 0 0 green;
+  -webkit-transform: translateY(1rem) rotate(135deg);
+  transform: translateY(1rem) rotate(135deg);
+}
+
+.header__nav--menu:hover:after {
+  -webkit-transform: translateY(-1rem) rotate(-135deg);
+  transform: translateY(-1rem) rotate(-135deg);
+}
+/*# sourceMappingURL=main.css.map */

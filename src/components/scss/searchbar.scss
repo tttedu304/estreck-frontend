@@ -1,7 +1,7 @@
-$background-color: #2A2E37;
+$background-color: #2a2e37;
 $search-bg-color: #242628;
-$icon-color: #00FEDE;
-$transition: all .5s ease;
+$icon-color: #00fede;
+$transition: all 0.5s ease;
 * {
   box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ body {
   overflow: hidden;
   transition: $transition;
   &:before {
-    content: '';
+    content: "";
     display: block;
     width: 3px;
     height: 100%;
@@ -28,7 +28,7 @@ body {
     transition: $transition;
   }
   &.open {
-    width: 420px;
+    width: 1500px;
     &:before {
       height: 60px;
       margin: 20px 0 20px 30px;
@@ -72,7 +72,7 @@ body {
   margin-left: 5px;
   transition: $transition;
   &:before {
-    content: '';
+    content: "";
     width: 3px;
     height: 15px;
     position: absolute;
@@ -84,7 +84,7 @@ body {
     transition: $transition;
   }
   &:after {
-    content: '';
+    content: "";
     width: 3px;
     height: 15px;
     position: absolute;
